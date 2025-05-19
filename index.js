@@ -9,6 +9,7 @@ function setDifficulty(button, level) {
   }
 
   possibleMatches = level;
+  $('#remaining-matches').text(possibleMatches);
   $("#pairs").text(level);
   switch (level) {
     case 10:
