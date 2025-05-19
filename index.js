@@ -94,10 +94,6 @@ function shuffle(inputArray) {
   return shuffledArray;
 }
 
-var categories = shuffle($("#game_grid>div").get());
-// $(".container-category").html(categories);
-
-
 function setup() {
   let firstCard = undefined
   let secondCard = undefined
