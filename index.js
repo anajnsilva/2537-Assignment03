@@ -1,6 +1,7 @@
 let possibleMatches;
 let timer;
 let intervalId;
+
 function setDifficulty(button, level) {
   if (button) {
     $(".difficulty").removeClass("active");
@@ -110,6 +111,7 @@ function setup() {
     if (timer < 0) {
       alert("Time's up! You lost!");
       clearInterval(intervalId);
+      cardsFlipping = 5;
     }
   }, 1000);
   let clicks = 0;
